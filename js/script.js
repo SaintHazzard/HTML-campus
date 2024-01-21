@@ -7,7 +7,7 @@ function showData(tipo) {
 
   const apiUrl = `/${tipo}`;
 
-  fetch(apiUrl)
+  fetch(`https://sainthazzard.github.io${apiUrl}`)
     .then(response => response.json())
     .then(data => {
       if (typeof data === 'object' && data !== null) {
