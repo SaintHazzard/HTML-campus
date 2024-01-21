@@ -1,11 +1,24 @@
-const express = require("express");
-const fs = require("fs");
+const express = require('express');
 const app = express();
-const PORT = 5500;
+const PORT = 3000;
+const fs = require("fs");
+const cors = require("cors");
+const path = require('path');
 
-const rutaArchivoJSON = "/storage/informacion.json"
 
 app.use(express.json());
+app.use(cors());
+app.use(express.static('public'));
+
+
+app.get('/', (req, res) => {
+  const indexPath = path.join(__dirname, '..', 'index.html');
+  res.sendFile(indexPath);
+});
+
+const rutaArchivoJSON = "./storage/informacion.json"
+
+
 
 
 app.get("/academico", (req, res) => {
@@ -14,7 +27,6 @@ app.get("/academico", (req, res) => {
     const contenidoJSON = fs.readFileSync(rutaArchivoJSON, "utf-8");
     const datos = JSON.parse(contenidoJSON);
     const academico = datos.academica;
-    console.log(academico)
     res.json(academico);
 
   } catch (error) {
@@ -23,6 +35,9 @@ app.get("/academico", (req, res) => {
   }
 });
 
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en el puerto ${PORT}`);
+});
 
 
 
