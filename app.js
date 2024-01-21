@@ -18,13 +18,10 @@ app.get('/info', (req, res) => {
 });
 
 // app.get('script.js', (req, res) => {
-//   const indexPath = path.join(__dirname, 'js/script.js');
+//   const indexPath = path.join(__dirname, 'js/script.js');  
 //   res.sendFile(indexPath);
 // });
-
 const rutaArchivoJSON = "./storage/informacion.json"
-
-
 
 
 function obtenerInformacion(categoria, res) {
@@ -44,8 +41,7 @@ function obtenerInformacion(categoria, res) {
   }
 }
 
-// Rutas para obtener información específica
-app.get('/info/infoPersonal', (req, res) => {
+app.get('/infoPersonal', (req, res) => {
   obtenerInformacion('infoPersonal', res);
 });
 
@@ -53,7 +49,7 @@ app.get('/academico', (req, res) => {
   obtenerInformacion('academica', res);
 });
 
-app.get('/info/laboral', (req, res) => {
+app.get('/laboral', (req, res) => {
   obtenerInformacion('laboral', res);
 });
 

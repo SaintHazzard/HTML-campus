@@ -1,16 +1,26 @@
 {
-  "infoPersonal" : {"name": "Alejandro Martinez Santos",
-"birthdate": "19/05/1998",
-"Age": "25",
-"email": " hazzard1@outlook.es",
-"address": "Calle 14 #16-52"},
-"academica":{
-"Primaria": "San miguel",
-"Secundaria": "Liceo Tame",
-"Universidad": "UTS"},
-"laboral": {
-"Primer Trabajo": "Tecnico en sistemas",
- "Habilidades": ["Aprendizaje rapido", "resolusion de problemas"],
-"Conocimiento": ["Javascript", "Node", "Python"]
-}
+  "infoPersonal": {
+    "name": "Alejandro Martinez Santos",
+    "birthdate": "19/05/1998",
+    "Age": "25",
+    "email": " hazzard1@outlook.es",
+    "address": "Calle 14 #16-52"
+  },
+  "academica": {
+    "Primaria": "San miguel",
+    "Secundaria": "Liceo Tame",
+    "Universidad": "UTS"
+  },
+  "laboral": {
+    "Primer Trabajo": "Tecnico en sistemas",
+    "Habilidades": [
+      "Aprendizaje rapido",
+      "resolusion de problemas"
+    ],
+    "Conocimiento": [
+      "Javascript",
+      "Node",
+      "Python"
+    ]
+  }
 }
