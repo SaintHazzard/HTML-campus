@@ -1,9 +1,9 @@
 {
-"name": "Alejandro Martinez Santos",
+  "infoPersonal" : {"name": "Alejandro Martinez Santos",
 "birthdate": "19/05/1998",
 "Age": "25",
 "email": " hazzard1@outlook.es",
-"address": "Calle 14 #16-52",
+"address": "Calle 14 #16-52"},
 "academica":{
 "Primaria": "San miguel",
 "Secundaria": "Liceo Tame",

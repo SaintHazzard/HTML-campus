@@ -1,8 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const btnObtenerDatos = document.getElementById('btnObtenerDatos');
+const btnObtenerDatos = document.getElementById('btnObtenerDatos');
+btnObtenerDatos.addEventListener('click', () => {
   const datosAcademicosDiv = document.getElementById('datosAcademicos');
-
-  fetch('http://localhost:3000/academico')
+  fetch('/academico')
     .then(response => response.json())
     .then(data => {
       if (typeof data === 'object' && data !== null) {
